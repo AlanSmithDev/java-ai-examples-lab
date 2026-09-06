@@ -1,0 +1,17 @@
+java-ai-examples-lab
+===================
+
+本仓库基于 LangChain4j 官方示例集
+（https://github.com/langchain4j/langchain4j-examples，Apache License 2.0）整理。
+
+原始版权声明与许可证条款见 LICENSE 文件，未作删改。
+
+本仓库所做的整理工作：
+- 移除上游 CI（.github）、Renovate、Prettier 等仓库专属配置；
+- 将根工程 artifactId 由 langchain4j-examples 重命名为 java-ai-examples-lab，
+  并同步 50 个子模块 parent 引用；
+- 以中文重写 README，按能力维度重新组织示例地图；
+- 为每个示例模块补充中文说明，便于学习。
+
+除非另有说明，本仓库中源自上游的源码其著作权归 LangChain4j 作者所有；
+本仓库整理者不对上游代码主张任何额外权利。
