@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="chat server">
+
+    <featureManager>
+        <platform>jakartaee-10.0</platform>
+        <platform>microprofile-7.0</platform>
+        <feature>cdi</feature>
+        <feature>jsonb</feature>
+        <feature>mpConfig</feature>
+        <feature>mpMetrics</feature>
+        <feature>mpOpenAPI</feature>
+        <feature>restfulWS</feature>
+        <feature>websocket</feature>
+    </featureManager>
+
+    <httpEndpoint host="*" httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"/>
+
+    <applicationManager autoExpand="true"/>
+
+    <webApplication contextRoot="/" location="jakartaee-microprofile-example.war"/>
+
+    <mpMetrics authentication="false"/>
+
+    <logging consoleLogLevel="INFO"/>
+
+</server>
